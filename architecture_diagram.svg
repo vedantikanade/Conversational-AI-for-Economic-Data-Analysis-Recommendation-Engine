@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430">
+  <style>
+    .box { fill:#eef4ff; stroke:#2457a6; stroke-width:2; rx:12; }
+    .text { font-family:Arial,sans-serif; font-size:17px; fill:#14213d; text-anchor:middle; }
+    .arrow { stroke:#4a5568; stroke-width:2.5; marker-end:url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568" />
+    </marker>
+  </defs>
+  <rect class="box" x="35" y="170" width="155" height="80" />
+  <text class="text" x="112" y="204"><tspan x="112">User question</tspan><tspan x="112" dy="24">(natural language)</tspan></text>
+  <line class="arrow" x1="190" y1="210" x2="245" y2="210" />
+  <rect class="box" x="245" y="170" width="165" height="80" />
+  <text class="text" x="327" y="204"><tspan x="327">Streamlit</tspan><tspan x="327" dy="24">chat interface</tspan></text>
+  <line class="arrow" x1="410" y1="210" x2="465" y2="210" />
+  <rect class="box" x="465" y="170" width="175" height="80" />
+  <text class="text" x="552" y="204"><tspan x="552">Question</tspan><tspan x="552" dy="24">classification</tspan></text>
+  <line class="arrow" x1="640" y1="210" x2="695" y2="210" />
+  <rect class="box" x="695" y="170" width="165" height="80" />
+  <text class="text" x="777" y="204"><tspan x="777">FRED data</tspan><tspan x="777" dy="24">retrieval</tspan></text>
+  <line class="arrow" x1="860" y1="210" x2="915" y2="210" />
+  <rect class="box" x="915" y="170" width="150" height="80" />
+  <text class="text" x="990" y="204"><tspan x="990">Calculations</tspan><tspan x="990" dy="24">and trends</tspan></text>
+  <line class="arrow" x1="990" y1="250" x2="990" y2="330" />
+  <rect class="box" x="875" y="330" width="230" height="65" />
+  <text class="text" x="990" y="370">Answer and visualization</text>
+</svg>
+
