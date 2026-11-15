@@ -46,7 +46,7 @@ with st.sidebar:
 st.subheader("Ask the economic data assistant")
 st.write("Enter one question below. Your answer will appear directly underneath.")
 
-with st.form("question_form", clear_on_submit=False):
+with st.form("question_form", clear_on_submit=True):
     question_input = st.text_input(
         "Question",
         placeholder="Example: What is the latest reported U.S. GDP?",
