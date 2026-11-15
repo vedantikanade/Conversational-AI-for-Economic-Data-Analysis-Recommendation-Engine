@@ -95,6 +95,14 @@ def answer_question(question: str, data: Dict[str, pd.DataFrame]) -> str:
             "association, not causation."
         )
 
+    if "visualiz" in text or "chart" in text or "graph" in text or "plot" in text:
+        corr = correlation(comparison)
+        return (
+            "The GDP growth and Core CPI inflation comparison chart is displayed below. "
+            f"The calculated correlation between the two year-over-year measures is {corr:.2f}. "
+            "The chart uses quarterly data so the two indicators can be compared on the same timeline."
+        )
+
     if "relationship" in text or "correlation" in text or "compare" in text:
         corr = correlation(comparison)
         direction = "positive" if corr > 0 else "negative" if corr < 0 else "very weak"
